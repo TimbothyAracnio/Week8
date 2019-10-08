@@ -140,10 +140,14 @@ print("This adds a \' where if you normally put one it wouldn't show up")
 print("This adds a \" where if you normally put one it wouldn't show up")
 
 # \a
-print("This adds a \a idk why")
+print("apparently it's supposed to make a \a bell noise but it didn't happen for me")
 
 # \b
+print("This removes the previous character\b")
+
 # \f
+print("this I think adds\fa space, but I looked it up and it says it makes a formfeed")
+
 # \n
 # \N{name}
 # \r
