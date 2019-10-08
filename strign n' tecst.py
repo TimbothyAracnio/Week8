@@ -66,3 +66,13 @@ end9 = "r"
 # these print several strings attached to each other
 print(end1 + end2 + end3,)
 print(end4 + end5 + end6 + end7 + end8 + end9)
+
+# theres more =\
+formatter = "%r %r %r %r"
+print(formatter % (1, 2, 3, 4))
+print(formatter % ("dig","dag","dug","dog"))
+print(formatter % (True, False, True, True))
+print(formatter % (formatter,formatter,formatter,formatter))
+
+# why do I use %r instead of %s in the above example?
+# so we can use different types of variables
