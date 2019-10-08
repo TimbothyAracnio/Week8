@@ -76,3 +76,81 @@ print(formatter % (formatter,formatter,formatter,formatter))
 
 # why do I use %r instead of %s in the above example?
 # so we can use different types of variables
+
+# which should I use on a regular basis?
+# probably %r, but it is good to use the others to be specific
+
+# why does %r sometimes give me single quotes around things
+# I'm not sure
+
+# this is a variable that is assigned to a string
+days = "Mon Tue Wed Thu Fri Sad"
+# this is a variable that is assigned to a string; the \n are like new lines
+months = "\nJanett\nFebil\nMargrette\nAproval... which I don't have\nMay I go to the re-\n\nNO!\n\nJunction function whats your runction\nJulie\nAugh... why wont it work?\nSeptiguat\nOctopus\nNovice\nDecades of men"
+
+
+print("These are the Days: ", days)
+print("These are the Months: ", months)
+
+print("""
+or 7?
+what about 7?
+will it work?
+I don't know,
+only my typing speed will tell...
+.
+.
+AHA!!! I knew it!
+You CAN do 7!
+""")
+
+numbers = """
+1
+2
+3
+4
+5
+6
+7
+8
+9"""
+
+# analize the following
+print("I count my defecation, here: %r" % numbers)
+print("I count my urination, here: %s" % numbers)
+
+# escape sequences.. whatever that means
+thingOne = "Thing One: \twatch me move!"
+thingTwo = "Thing Two: watch me \\ split!"
+thingThree = "Thing Three: watch me \n crush \n the \n souls \n of \n puny \n children."
+print("Our story starts in a Dr. Suess book that has been corupted: ")
+
+print(thingOne)
+print(thingTwo)
+print(thingThree)
+
+# what do these do?
+# \\
+print("These adds a \\ where if you normally put one it wouldn't show up")
+
+# \'
+print("This adds a \' where if you normally put one it wouldn't show up")
+
+# \"
+print("This adds a \" where if you normally put one it wouldn't show up")
+
+# \a
+print("This adds a \a idk why")
+
+# \b
+# \f
+# \n
+# \N{name}
+# \r
+# \t
+# \uxxxx
+# \Uxxxxxxxx
+# \v
+# \ooo
+# \xhh
+# \
