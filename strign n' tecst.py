@@ -149,12 +149,28 @@ print("This removes the previous character\b")
 print("this I think adds\fa space, but I looked it up and it says it makes a formfeed")
 
 # \n
+print("This makes \n a new line")
+
 # \N{name}
+print("this adds Emojis!!! \N{face with tears of joy}")
+
 # \r
+print(" \r does the thing")
+
 # \t
 # \uxxxx
 # \Uxxxxxxxx
 # \v
 # \ooo
 # \xhh
-# \
+
+#
+while False:
+    for i in ["/", "-", "\\", "|"]:
+        print("%s\r" % i, end='')
+
+age = input("How old are you?")
+height = input("how tall are you?")
+
+print("So, you are %r old and %r tall." % (age, height))
+
