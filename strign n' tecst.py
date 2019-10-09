@@ -155,7 +155,7 @@ print("This makes \n a new line")
 print("this adds Emojis!!! \N{face with tears of joy}")
 
 # \r
-print(" \r does the thing")
+print(" This \r Removes all characters before it")
 
 # \t
 # \uxxxx
@@ -172,5 +172,5 @@ while False:
 age = input("How old are you?")
 height = input("how tall are you?")
 
-print("So, you are %r old and %r tall." % (age, height))
+print("So, you are %s years old and %s tall." % (age, height))
 
