@@ -158,19 +158,87 @@ print("this adds Emojis!!! \N{face with tears of joy}")
 print(" This \r Removes all characters before it")
 
 # \t
-# \uxxxx
-# \Uxxxxxxxx
-# \v
-# \ooo
-# \xhh
+print("This \t creates a tab!")
 
-#
+# \uxxxx
+print("this \u041b is a 16-bit hex value that makes symbols")
+
+# \Uxxxxxxxx
+print("this \U000001a9 is a 32-bit hex value that makes symbols")
+
+# \v
+print("the cow jumped \v over the moon")
+
+# \ooo
+print("Prints an Ascii \105")
+
+# \xhh
+print("Prints a hexidecimal \x21 ")
+
+# what does this do?
+
+# It makes a twirly thing
 while False:
     for i in ["/", "-", "\\", "|"]:
         print("%s\r" % i, end='')
 
-age = input("How old are you?")
-height = input("how tall are you?")
+# This lets you make inputs and can print them!!! =D
+# age = input("How old are you?")
+# height = input("how tall are you?")
 
-print("So, you are %s years old and %s tall." % (age, height))
+# prints the inputs
+# print("So, you are %s years old and %s tall." % (age, height))
+
+print("\n\n\n\n\n\n")
+
+# ask 4 more questions and answer them
+
+# Can I make a user and password?
+user = input("Username: ")
+if user == "Panda123":
+    password = input("Password: ")
+    if password == "password":
+        print("Hello Panda123!")
+    else:
+        print("Incorrect password.")
+
+else:
+    print("This user does not exist.")
+# yes!
+
+
+# Can I use any emoji?
+# print("\N{pile of poop}")
+# no
+
+# (filler question) what does the fox say?
+# ...
+
+# Can I just get onto the story? I'm tired and have a lot of homework
+# sure
+# yay!
+
+
+# The story!!!
+char = "cat"
+
+def nameOpt():
+    char = input("What would you like your characters name to be?: ")
+    nameOption = input("You would like your character to be named %r? \n(y/n) " % char)
+    if nameOption == "n":
+        nameOpt()
+    elif nameOption == "y":
+        print("\n\n\nAlright %s lets begin the story!\n" % char)
+    else:
+        print("I don\'t speak that coding language")
+        nameOpt()
+
+print("\n\n\n\n\n\n\n\n")
+
+print("Welcome to the \"create your own adventure\" adventure!\n")
+nameOpt()
+print("It was a Dark and stormy night")
+
+
+
 
