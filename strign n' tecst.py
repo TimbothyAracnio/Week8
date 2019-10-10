@@ -228,7 +228,7 @@ def nameOpt():
     if nameOption == "n":
         nameOpt()
     elif nameOption == "y":
-        print("\n\n\nAlright %s lets begin the story!\n" % char)
+        print("\n\n\nAlright, lets begin %s\'s story!\n" % char)
     else:
         print("I don\'t speak that coding language")
         nameOpt()
@@ -237,7 +237,7 @@ print("\n\n\n\n\n\n\n\n")
 
 print("Welcome to the \"create your own adventure\" adventure!\n")
 nameOpt()
-print("It was a Dark and stormy night")
+print("It was a Dark and stormy night, and there where 15 wolves who had cornered %s" % char)
 
 
 
